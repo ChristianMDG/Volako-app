@@ -1,12 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
 import './global.css';
+import DashboardScreen from './src/features/dashboard/DashboardScreen';
 
 export default function App() {
   return (
-    <View className="flex-1 items-center justify-center bg-emerald-500">
-      <Text className="text-base">Coucou Bogosy</Text>
+    <>
+    <DashboardScreen />
       <StatusBar style="auto" />
-    </View>
+    </>
   );
 }
